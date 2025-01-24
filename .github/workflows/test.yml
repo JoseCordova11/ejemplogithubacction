@@ -27,10 +27,6 @@ jobs:
             - name: Instalar MySql
               run: |
                 brew install mysql
-                mysql.server start
-                mysql -version 
-
-                 
                 
     
     test:
