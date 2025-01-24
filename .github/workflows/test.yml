@@ -24,6 +24,10 @@ jobs:
                 brew install php composer
                 php -v
                 composer --version 
+            - name: Instalar MySql
+              run: |
+                brew install mysql --version=8.0
+                
                  
                 
     
