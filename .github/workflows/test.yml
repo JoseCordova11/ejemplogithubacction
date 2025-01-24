@@ -16,8 +16,16 @@ jobs:
         runs-on: windows-latest
         needs: [inicio]
         steps:
-            - name: mostrar texto
-              run: echo "Hola Mundo 2"
+            - name: texto
+              run: echo "Construir"
+            - name: instalar PHP y composer MacOS
+              run: |
+                brew update
+                brew install php composer
+                php -v
+                composer --version 
+                 
+                
     
     test:
         runs-on: windows-latest
