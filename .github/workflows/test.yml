@@ -26,8 +26,10 @@ jobs:
                 composer --version 
             - name: Instalar MySql
               run: |
-                brew install mysql --version=8.0
-                
+                brew install mysql
+                mysql.server start
+                mysql -version 
+
                  
                 
     
