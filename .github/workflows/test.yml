@@ -27,6 +27,10 @@ jobs:
             - name: Instalar MySql
               run: |
                 brew install mysql
+                    mysql.server start
+                    mysql --version
+                    mysql -u root -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';"
+                    mysql -u root -proot -e "CREATE DATABASE lumen_db;"
                 
     
     test:
