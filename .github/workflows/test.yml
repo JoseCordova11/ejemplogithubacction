@@ -1,6 +1,7 @@
 name: Ejemplo CI/CD
 
-on: [push]
+on: 
+   push:
 
 jobs:
     inicio:
